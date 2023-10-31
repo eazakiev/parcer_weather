@@ -9,4 +9,4 @@ bs = BeautifulSoup(response.text, "lxml")
 
 
 temp = bs.find('span', 'temp__value temp__value_with-unit')
-print(temp)
+print(f"Температура воздуха в Новороссийске: {temp.text}")
